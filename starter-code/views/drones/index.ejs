@@ -1,8 +1,13 @@
 <!-- drones/index.ejs -->
+<h2>New Drone</h2>
+<p>If you want to enter a new drone, <a href='/drones/new'> click here </a> </p>
+
+<h2> Current Drones </h2>
 
 <ul>
     <% drones.forEach((drone) => { %>
-      <li>
+
+    <li>
         <%= drone.name %> 
     </li>
     <li>
@@ -11,5 +16,7 @@
     <li>
         <%= drone.maxSpeed %>
     </li>
+
     <%  }) %>
   </ul>
+
